@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeroo</title>
+    <link rel="stylesheet" href="project_pages.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" id="home">&lt; Home</a>
+        <div id="nav-links">
+            <p>
+                <a href="artificial_intelligence.html">Artificial Intelligence</a>
+                |
+                <a href="computer_buying.html">Computer Buying</a>
+                |
+                <a href="code.org.html">Code.org</a>
+                |
+                <a href="jeroo.html">Jeroo</a>
+                |
+                <a href="edision.html">Robotics</a>
+            </p>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Jeroo Exercise 9</h1>
+            <p class="subtitle">Week 5 Assignment - Jeroo Exercises 6 - 10</p>
+            <h3 class="link-header">Links:</h3>
+            <a href="assets/downloads/Exercise9.jev" download>Jeroo Exercise 9 Island File&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg></a>
+            <br>
+            <a href="https://studio.code.org/projects/gamelab/GoknU5GVZbZAkVj531KpQVycOXu-gC4IL5vXROcTJtc">Jeroo Exercise 9 Code&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg></a>
+    
+            <h2>Summary of Assignment & Requirements:</h2>
+            <p>
+                Open island 'Exercise9' and create 3 Jeroos at location (0, 0), (10,0) and (15, 22). The first Jeroo is allowed to start with 5 flowers only, the other two Jeroo's start with zero flowers! Avoid nets on island and have all Jeroos end up at the bottom LEFT corner of the island. Save source file as Exercise9.
+            </p>
+            <img src="assets/pictures/jeroo_exercise9_island.png" alt="Jeroo Exercise 9 Island" width="400"/>
+            <p class="img-caption">Jeroo Exercise 9 Island</p>
+    
+            <h2>Challenges & My Solution:</h2>
+            <p>The assignment wanted me to free all the Jeroos and then have them end up in the bottom left corner. However, Jeroo #1 (Blue Arrow) spawned in with only 5 flowers. Almost any solution I tried required more than 5 flowers. So I tried breaking down this bigger task of getting all 3 Jeroos to the bottom left corner into 3 smaller tasks of getting each individual Jeroo to the bottom left corner with as few flowers as possible. I started with the Jeroo #1 (Blue Arrow) and I made it use one flower to put a hole in the line of nets. Then free Jeroo #2 (Red Triangle) and give a flower. I then made Jeroo #2 go through the hole in the nets (made by Jeroo #1) and then go and free Jeroo #3 (Pink Quadrilateral). I then made Jeroo #1 use it's three remaining flowers to get to the bottom left corner of the island. Then I made Jeroo #2 and Jeroo #3 follow the path made by Jeroo #1.</p>
+    
+            <h2>Recording of Code Running:</h2>
+            <br>
+            <video controls width="1000">
+                <source src="assets/videos/jeroo_exercise9_screen_recording.mp4">
+            </video>
+        </div>
+    </div>
+</body>
+</html>

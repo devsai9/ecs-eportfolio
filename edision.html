@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edison Robotics</title>
+    <link rel="stylesheet" href="project_pages.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" id="home">&lt; Home</a>
+        <div id="nav-links">
+            <p>
+                <a href="artificial_intelligence.html">Artificial Intelligence</a>
+                |
+                <a href="computer_buying.html">Computer Buying</a>
+                |
+                <a href="code.org.html">Code.org</a>
+                |
+                <a href="jeroo.html">Jeroo</a>
+                |
+                <a href="edision.html">Robotics</a>
+            </p>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Lesson 2 - WHILE Loop</h1>
+            <p class="subtitle">Week 8 Assignment - Edison Robot</p>
+    
+            <h2>Summary of Assignment & Requirements:</h2>
+            <p>
+                Read the related While Loop PDFs and answer the questions in the assignment.<br>
+                Using the code in the reading above see what happens when you press the triangle and square buttons.
+                <ol>
+                    <li>What did the robot do when you pressed the triangle or round button a few seconds after starting the program?</li>
+                    <li>Run the program again and try pressing the square button instead of the round or triangle button. What happened? Why did this happen? Explain.</li>
+                    <br>
+                    For this question send me a video of the robot moving and the code.
+    
+                    <li>Now try adding some more code at the end of the program. The new code you write should make Edison drive backward after you press either the round or the triangle button again. In other words, your program should tell Edison to drive forward the first time a button is pressed, then backwards when a button is pressed again. Remember to include the colon and to indent your code inside the while loop. What does your new program look like? Write your code down below.</li>
+                </ol>
+            </p>
+    
+            <h2>Challenges & My Solution:</h2>
+            <p>Prompts #1 and #2 I was able to do easily. I got stuck on prompt #3. I tried many solutions, all of which would not make the robot go backwards once a button was clicked for the second time. So I thought about it and I decided to copy the code used to make the robot go forward on the first button press to make it reverse on the second button press.<br>My Code:
+                <code>
+                    Ed.ReadKeypad()<br>
+                    while Ed.ReadKeypad() == Ed.KEYPAD_NONE:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;pass<br>
+                    Ed.Drive(Ed.FORWARD, Ed.SPEED_6, 8)<br>
+                    while Ed.ReadKeypad() == Ed.KEYPAD_NONE:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;pass<br>
+                    Ed.Drive(Ed.BACKWARD, Ed.SPEED_6, 8)
+                </code>
+            </p>
+    
+            <h2>Recording of Code Running:</h2>
+            <br>
+            <video controls width="1000">
+                <source src="assets/videos/edision_robot_while_loop_video.mp4">
+            </video>
+        </div>
+    </div>
+</body>
+</html>
